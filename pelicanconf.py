@@ -13,7 +13,7 @@ LOCALE = 'en_US.utf8'
 MENUITEMS = (('documentation', 'http://docs.getpelican.com'), )
 
 # Blogroll
-LINKS = (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+LINKS = (('Pelican', 'http://docs.getpelican.com'),
           ('Python.org', 'http://python.org'),
           ('Jinja2', 'http://jinja.pocoo.org'))
 
