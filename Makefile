@@ -11,10 +11,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=files.lolnet.lan
-SSH_PORT=22
-SSH_USER=alexis
-SSH_TARGET_DIR=/home/www/notmyidea.org/pelican/
+SSH_HOST=getpelican.com
+SSH_PORT=20126
+SSH_USER=pelican
+SSH_TARGET_DIR=/home/pelican/blog/
 
 DROPBOX_DIR=~/Dropbox/Public/
 

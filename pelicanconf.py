@@ -10,6 +10,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 LOCALE = 'en_US.utf8'
 
+MENUITEMS = (('documentation', 'http://docs.getpelican.com'), )
+
 # Blogroll
 LINKS = (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
           ('Python.org', 'http://python.org'),
