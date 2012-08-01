@@ -2,8 +2,7 @@ The pelican's blog
 ##################
 
 This is the pelican's project weblog. You can add content to it by forking it
-or pushing direcly on github. When you do so, if you update the gh-pages
-branch, then you'll update the content of the generated blog.
+or pushing direcly on the pelican server.
 
 The makefile has a rule to do that for you, when you're ready to publish, and
 if you have the rights, you just have to type::
