@@ -60,4 +60,14 @@ publish:
 upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
+get_themes:
+	git clone https://github.com/getpelican/pelican-themes.git
+
+update_themes:
+	cd pelican-themes && git pull
+
+themes: update_themes
+	cd pelican-themes && for theme in `ls`; do $(PELICAN) $(INPUTDIR) -o ../outputs/output-$$theme -t $$theme -s $(CONFFILE) $(PELICANOPTS); done
+
+
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
