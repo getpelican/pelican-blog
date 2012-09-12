@@ -57,17 +57,20 @@ devserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-upload: publish
+upload: publish themes
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete themes/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)/themes
 
 get_themes:
-	git clone https://github.com/getpelican/pelican-themes.git
+	git clone https://github.com/getpelican/pelican-themes.git --recursive
 
 update_themes:
-	cd pelican-themes && git pull
+	cd pelican-themes && git pull && cd ..
+	echo '' > all-themes.html
+	for theme in `ls pelican-themes`; do echo '<a href="themes/$(theme)/index.html">$(theme)</a>' >> all-themes.html; done
 
 themes: update_themes
-	cd pelican-themes && for theme in `ls`; do $(PELICAN) $(INPUTDIR) -o ../outputs/output-$$theme -t $$theme -s $(CONFFILE) $(PELICANOPTS); done
+	for theme in `ls pelican-themes`; do $(PELICAN) $(INPUTDIR) -o themes/$$theme -t pelican-themes/$$theme -s $(PUBLISHCONF) $(PELICANOPTS); done
 
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github

@@ -3,7 +3,7 @@
 
 AUTHOR = u"Pelican Contributors"
 SITENAME = u"Pelican Development Blog"
-SITEURL = ''
+SITEURL = '.'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -18,3 +18,4 @@ LINKS = (('Pelican', 'http://docs.getpelican.com'),
          ('Jinja2', 'http://jinja.pocoo.org'))
 
 DEFAULT_PAGINATION = 5
+LESS_GENERATOR = True
