@@ -18,6 +18,9 @@ a page, linking to intra-site resources has been significantly enhanced. In
 addition to improving reliability, it's now possible to link to a resource in
 your *source content* hierarchy instead of the *generated* hierarchy.
 
+Find more information here:
+http://docs.getpelican.com/en/3.1.1/getting_started.html#linking-to-internal-content
+
 Metadata extraction from filename
 =================================
 
@@ -26,6 +29,8 @@ extraction from the filename via regular expressions. For example, if you
 would like to extract both the date and the post slug from the filename, you
 could set your ``FILENAME_METADATA`` setting to something like:
 ``'(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'``
+
+
 
 Web asset processing moved to separate plugin
 =============================================
