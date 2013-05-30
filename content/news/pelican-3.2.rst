@@ -93,6 +93,11 @@ wrinkles. Following are a few notes that may help:
   has disappeared after upgrading, ensure that any instances of ``codehilite``
   in your CSS are replaced with ``highlight``.
 
+* Support for Python 2.6 has been dropped as of Pelican 3.2. For those running
+  on distros that do not have a more recent version of Python available, one
+  possible solution is to compile Python 2.7.x and use it from within a
+  virtualenv (e.g., via ``virtualenv -p $HOME/bin/python2.7 pelican``).
+
 We will keep the above list updated with any additional items as we find them.
 
 Special thanks
