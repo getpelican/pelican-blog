@@ -9,6 +9,8 @@ SITEURL = 'http://blog.getpelican.com'
 
 DELETE_OUTPUT_DIRECTORY = True
 
+GAUGES = "516ffc13613f5d0d63000002"
+
 # Following items are often useful when publishing
 
 # Uncomment following line for absolute URLs in production:
