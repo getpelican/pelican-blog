@@ -8,7 +8,7 @@ Today we are pleased to announce the release of Pelican 3.3. Highlights of the
 improvements contained in this release follow below.
 
 For those who are new to Pelican, please refer to the `Getting Started Guide
-<http://docs.getpelican.com/en/3.3/getting_started.html>`_. There is also a
+<http://docs.getpelican.com/en/3.3.0/getting_started.html>`_. There is also a
 `Tutorials <https://github.com/getpelican/pelican/wiki/Tutorials>`_ page
 available, which currently includes a link to a Pelican installation
 screencast.
@@ -65,7 +65,7 @@ wrinkles. Following are a few notes that may help:
 * The ``FILES_TO_COPY`` setting has been deprecated, so replace it with the
   ``STATIC_PATHS`` and ``EXTRA_PATH_METADATA`` settings. Refer to the
   corresponding entries in the `Settings section of the docs
-  <http://docs.getpelican.com/en/3.3/settings.html#basic-settings>`_ for more
+  <http://docs.getpelican.com/en/3.3.0/settings.html#basic-settings>`_ for more
   information.
 
 * Due to minor changes to the plugin API, some plugins may not function
