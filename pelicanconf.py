@@ -11,6 +11,7 @@ DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
 
 MENUITEMS = (('documentation', 'http://docs.getpelican.com'), )
+DISPLAY_PAGES_ON_MENU = False
 
 # Blogroll
 LINKS = (('Pelican', 'http://docs.getpelican.com/'),
