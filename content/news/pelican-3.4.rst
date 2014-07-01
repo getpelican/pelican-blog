@@ -25,24 +25,24 @@ even easier.
 Fixed locale and encoding issues
 --------------------------------
 
-Finally URLs can include e.g. localized month names.
+Finally URLs can include, for example, localized month names.
 
 Improved documentation, both in style and content
 -------------------------------------------------
 
-The documentation has been ported to the new RtD theme, including a functional
-search bar and a navigation side panel. A quickstart section is now provided to
-jump-start your Pelican experience.
+The documentation has been ported to the new ReadTheDocs theme, including a
+functional search bar and a navigation side panel. A quickstart section is now
+provided to jump-start your Pelican experience.
 
 Support for multiple post authors
 ----------------------------------
 
-The new `:authors:` metadata field makes it possible to easily manage multi-user
-blogs.
+The new ``:authors:`` metadata field makes it possible to easily manage
+multi-user sites.
 
 
-Upgrading from prevous releases
-===============================
+Upgrading from previous releases
+================================
 
 While we do everything we can to maximize backwards compatibility and ensure
 smooth Pelican upgrades, it's possible that you may encounter un-anticipated
