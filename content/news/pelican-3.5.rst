@@ -5,8 +5,7 @@ Pelican 3.5 released
 :slug: pelican-3.5-released
 
 Today we are pleased to announce the release of Pelican 3.5. Highlights of the
-improvements contained in this release follow below. For a full list of changes,
-see: https://github.com/getpelican/pelican/compare/3.4.0...3.5.0
+improvements contained in this release follow below.
 
 For those who are new to Pelican, please refer to the `Quickstart Guide
 <http://docs.getpelican.com/en/3.5.0/quickstart.html>`_. There is also a
@@ -44,6 +43,7 @@ Highlights
 * Fix an issue when parsing non-string URLs from settings.
 * Improve consistency of debug and warning messages.
 
+For a full list of changes, see: https://github.com/getpelican/pelican/compare/3.4.0...3.5.0
 
 Upgrading from previous releases
 ================================
