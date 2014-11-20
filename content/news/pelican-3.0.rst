@@ -12,11 +12,11 @@ Today marks the release of Pelican 3.0! Some of the new features include:
 * Improved recognition of alternate content filename extensions
 * ... and much more!
 
-Feel free to check out the `package listing on Crate.io 
-<https://crate.io/packages/pelican/>`_ or the `project source at GitHub
+Feel free to check out the `package listing on PyPI
+<https://pypi.python.org/pypi/pelican/>`_ or the `project source at GitHub
 <https://github.com/getpelican/pelican>`_. If you want to give Pelican a spin,
 check out the `Getting Started
-<http://docs.getpelican.com/en/latest/getting_started.html>`_ section of the
+<http://docs.getpelican.com/en/3.0/getting_started.html>`_ section of the
 `Pelican Documentation <http://docs.getpelican.com/>`_.
 
 Thanks to all the folks who helped out with testing, reporting bugs, fixing
