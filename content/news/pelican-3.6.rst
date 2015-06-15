@@ -10,8 +10,7 @@ release follow below.
 For those who are new to Pelican, please refer to the `Quickstart Guide
 <http://docs.getpelican.com/en/latest/quickstart.html>`_. There is also a
 `Tutorials <https://github.com/getpelican/pelican/wiki/Tutorials>`_ page
-available, which currently includes a link to a Pelican installation
-screencast.
+available, which also includes a link to a Pelican installation screencast.
 
 Highlights
 ==========
@@ -42,7 +41,7 @@ Upgrading from previous releases
 <http://docs.getpelican.com/en/latest/settings.html#reading-only-modified-content>`_
 is now disabled by default. If you have a large site with many articles/pages
 and notice that site generation takes longer than you would prefer, follow
-these two steps::
+these two steps:
 
 1. Delete the ``cache`` folder, if it exists
 2. Add the following to your settings file::
