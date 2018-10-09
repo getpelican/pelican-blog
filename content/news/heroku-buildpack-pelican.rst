@@ -19,7 +19,7 @@ To enable the Heroku buildpack for existing sites, run:
 
 .. code-block:: bash
     
-    heroku buildpack:set https://github.com/getpelican/heroku-buildpack-pelican
+    heroku buildpacks:set https://github.com/getpelican/heroku-buildpack-pelican
 
 Alternatively, for those of you switching to Heroku, you can use the following
 command to create your Pelican site on Heroku.
