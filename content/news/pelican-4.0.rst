@@ -27,6 +27,9 @@ You may see deprecation warnings for certain settings. If that occurs, please
 change the specified setting to the new setting mentioned in the deprecation
 message.
 
+Due to `Python-Markdown changes`_, Markdown users must ensure they are using
+version < 3.0 or >= 3.1 to ensure proper rendering of code blocks.
+
 Some user-submitted themes use positional argument formatting on object-related
 feed URLs, which will cause sites to fail to build with: "TypeError: not all
 arguments converted during string formatting". In that case, the theme needs to
@@ -47,11 +50,11 @@ be updated. For example, substitute ``TAG_FEED_ATOM|format(tag.slug)`` with
 
 As always, we do everything we can to maximize backwards compatibility and ensure
 smooth Pelican upgrades. If you run into problems, please see the `How to Get Help
-<http://docs.getpelican.com/en/latest/contribute.html#how-to-get-help>`_ section
+<https://docs.getpelican.com/en/latest/contribute.html#how-to-get-help>`_ section
 of the documentation, and we will update this post with any upgrade tips
 contributed by the Pelican community.
 
 .. _release page: https://github.com/getpelican/pelican/releases/tag/4.0.0
-.. _Release History: http://docs.getpelican.com/en/4.0.0/changelog.html
+.. _Release History: https://docs.getpelican.com/en/4.0.0/changelog.html
 .. _milestone: https://github.com/getpelican/pelican/milestone/12?closed=1
-.. _Settings: http://docs.getpelican.com/en/4.0.0/settings.html
+.. _Python-Markdown changes: https://github.com/getpelican/pelican/issues/2493
