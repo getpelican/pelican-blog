@@ -10,7 +10,10 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
 
-MENUITEMS = (('documentation', 'http://docs.getpelican.com'), )
+MENUITEMS = (('documentation', 'https://docs.getpelican.com'),
+             ('contribute', 'https://donate.getpelican.com'),
+             ('gratitude', '/pages/gratitude.html'),
+            )
 DISPLAY_PAGES_ON_MENU = False
 
 # Blogroll
