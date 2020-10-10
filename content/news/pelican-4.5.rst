@@ -23,7 +23,7 @@ This new release also includes the following enhancements, fixes, and tweaks:
 * List registered plugins via ``pelican-plugins`` command
 * Override settings via ``-e`` / ``--extra-settings`` CLI option flags
 * Add settings for custom Jinja globals and tests
-* Customize article summary ellipsis via ``SUMMARY_END_MARKER`` setting
+* Customize article summary ellipsis via ``SUMMARY_END_SUFFIX`` setting
 * Customize Typogrify dash handling via new ``TYPOGRIFY_DASHES`` setting
 * Support Unicode when generating slugs
 * Support Asciidoc ``.adoc`` file generation in Pelican importer
@@ -50,6 +50,8 @@ Next, if your site uses any Pelican plugins:
 2. If you are using one or more plugins that have not yet been migrated to the new `Pelican Plugins`_ organization, this is a great opportunity to contribute to Pelican by assisting with plugin migration. Create a new issue at the `legacy plugin repo <https://github.com/getpelican/pelican-plugins/issues>`_ and communicate which plugin you would like to help migrate, after which a Pelican maintainer will guide you through the process.
 
 3. If you want to use a mix of namespace & legacy plugins, or if you prefer to manually specify plugins instead of relying on Pelican’s automatic detection, you can use the ``PLUGINS`` setting as described in the `How to Use Plugins <https://docs.getpelican.com/en/latest/plugins.html#how-to-use-plugins>`_ documentation.
+
+4. Importing from ``pelican.signals`` is deprecated. If your plugin uses that pattern, please notify the plugin author to update the code to use ``from pelican import signals`` or ``import pelican.plugins.signals`` instead.
 
 As always, we do everything we can to maximize backwards compatibility and ensure
 smooth Pelican upgrades. If you run into problems, please see the `How to Get Help
