@@ -1,11 +1,15 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+import logging
 
-AUTHOR = u"Pelican Contributors"
-SITENAME = u"Pelican Development Blog"
-SITEURL = ''
+AUTHOR = "Pelican Contributors"
+SITENAME = "Pelican Development Blog"
+SITEURL = ""
 
-TIMEZONE = 'Europe/Paris'
+PATH = "content"
+
+CACHE_CONTENT = False
+LOAD_CONTENT_CACHE = False
+
+TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'en'
 LOCALE = 'en_US.UTF-8'
