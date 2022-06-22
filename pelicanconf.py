@@ -51,3 +51,14 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
 }
+
+MARKDOWN = {
+    "extension_configs": {
+        "markdown.extensions.admonition": {},
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {},
+    },
+    "output_format": "html5",
+}
