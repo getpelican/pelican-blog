@@ -5,7 +5,7 @@ Gratitude
 
 The theme for this site is courtesy of `Smashing Magazine`_.
 
-The Pelican logo was designed by Derry Spann and is available under a
+The Pelican logo was designed by Derry Livenski and is available under a
 `Creative Commons`_ license via the download links below:
 
 |logo|
