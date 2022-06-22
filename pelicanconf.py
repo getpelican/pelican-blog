@@ -6,6 +6,8 @@ SITEURL = ""
 
 PATH = "content"
 
+THEME = "themes/notmyidea"
+
 CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
 
