@@ -6,7 +6,7 @@ SITEURL = ""
 
 PATH = "content"
 
-THEME = "themes/notmyidea"
+THEME = "themes/getpelican"
 
 CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
@@ -15,6 +15,8 @@ TIMEZONE = "Europe/Rome"
 
 DEFAULT_LANG = "en"
 LOCALE = "en_US.UTF-8"
+
+TEMPLATE_PAGES = {"homepage.html": "index.html"}
 
 MENUITEMS = (
     ("documentation", "https://docs.getpelican.com"),

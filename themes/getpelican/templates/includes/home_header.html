@@ -1,0 +1,30 @@
+<header>
+  {# <h1>
+      <a href="{{ SITEURL }}/">{{ SITENAME }}
+        {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}
+    </a>
+  </h1>
+  <nav>
+    <ul>
+      {% if DISPLAY_CATEGORIES_ON_MENU -%}
+        {% for cat, null in categories %}
+          <li {% if cat == category %}class="active"{% endif %}>
+            <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+      {% for title, link in MENUITEMS %}
+        <li{% if title in output_file %} class="active"{% endif %}>
+          <a href="{{ link }}">{{ title }}</a>
+        </li>
+      {% endfor %}
+      {% if DISPLAY_PAGES_ON_MENU -%}
+        {% for page in PAGES %}
+          <li>
+            <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </nav> #}
+</header>

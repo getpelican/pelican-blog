@@ -1,9 +1,6 @@
 Pelican Static Site Generator, Powered by Python
 ================================================
 
-:url:
-:save_as: index.html
-
 Pelican is a static site generator that requires no database or server-side logic.
 
 The project is maintained by `Justin Mayer`_ (`@jmayer`_) and other members of
