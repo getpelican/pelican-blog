@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pelican-blog"
+version = "0.1.0"
+description = "The Pelican Blog"
+authors = ["Luca Fedrizzi <9001053+fedriz@users.noreply.github.com>"]
+readme = "README.rst"
+packages = [{include = "pelican_blog"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pelican-tailwindcss = ">=0.2.0"
+djlint = ">=1.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
