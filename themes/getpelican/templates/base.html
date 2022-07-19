@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="/output.css" />
   </head>
   <body>
-    <div class="max-w-7xl mx-auto">{% include "./includes/topbar.html" %}</div>
-    <div class="max-w-7xl mx-auto">
+    {% block header %}
+      <div class="max-w-7xl mx-auto px-4">{% include "./includes/topbar.html" %}</div>
+    {% endblock header %}
+    <div class="max-w-7xl mx-auto px-4">
       {% block content %}
       {% endblock content %}
     </div>

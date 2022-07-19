@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply rounded-lg px-8 py-3;
+        @apply inline-block;
+    }
+    .btn_primary {
+        @apply bg-primary;
+        @apply text-white;
+    }
+    .btn_white {
+        @apply bg-white;
+    }
+
+    .text_gradient {
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-shade;
+    }
+
+    .fluctuate_animation {
+        animation: fluctuate 8s infinite;
+    }
+}
+
+@keyframes fluctuate {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(+20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
