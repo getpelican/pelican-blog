@@ -68,3 +68,11 @@ MARKDOWN = {
     },
     "output_format": "html5",
 }
+
+TAILWIND = {
+    "version": "3.0.0",
+    "plugins": [
+        "@tailwindcss/typography",
+        "@tailwindcss/line-clamp",
+    ],
+}
