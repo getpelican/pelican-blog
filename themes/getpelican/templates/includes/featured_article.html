@@ -1,0 +1,15 @@
+<aside class="mt-8">
+  <article>
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-2xl sm:text-4xl font-bold text_gradient">
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+      </h1>
+      {% include 'article_infos.html' %}
+    </div>
+    <div class="prose prose-sm sm:prose-base mx-auto mt-6 break-words">{{ article.content }}</div>
+    {% include 'comments.html' %}
+  </article>
+  {% if loop.length == 1 %}
+    {% include 'pagination.html' %}
+  {% endif %}
+</aside>

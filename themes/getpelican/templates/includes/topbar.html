@@ -1,21 +1,27 @@
-<nav class="flex justify-between items-center text-gray-900 py-4">
-  <a class="inline-flex items-center" href="{{ SITEURL }}">
-    <div>
-      <img class="h-6 sm:h-8 lg:h-12"
-           src="{{ SITEURL }}/theme/img/logo.svg"
-           alt="logo"/>
+<div class="max-w-7xl mx-auto px-4">
+  <nav class="flex justify-between items-center text-gray-900 py-4">
+    <a class="inline-flex items-center no-underline" href="{{ SITEURL }}/">
+      <div>
+        <img class="h-6 sm:h-8 lg:h-12"
+             src="{{ SITEURL }}/theme/img/logo.svg"
+             alt="logo"/>
+      </div>
+      <p class="font-black sm:text-xl lg:text-3xl ml-3 leading-none">Pelican</p>
+    </a>
+    <div class="flex items-center">
+      <div>
+        <a class="font-bold no-underline" href="{{ SITEURL }}/blog/">Blog</a>
+      </div>
+      <div class="font-bold ml-6">
+        <a class="no-underline"
+           href="https://docs.getpelican.com/en/latest/"
+           target="_blank">Docs</a>
+      </div>
+      <div class="font-bold ml-6">
+        <a class="no-underline"
+           href="https://github.com/getpelican/pelican"
+           target="_blank">GitHub</a>
+      </div>
     </div>
-    <p class="font-black sm:text-xl lg:text-3xl ml-3 leading-none">Pelican</p>
-  </a>
-  <div class="flex items-center">
-    <div>
-      <a class="font-bold" href="{{ SITEURL }}/category/news.html">Blog</a>
-    </div>
-    <div class="font-bold ml-6">
-      <a href="https://docs.getpelican.com/en/latest/" target="_blank">Docs</a>
-    </div>
-    <div class="font-bold ml-6">
-      <a href="https://github.com/getpelican/pelican" target="_blank">GitHub</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+</div>
