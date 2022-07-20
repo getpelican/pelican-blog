@@ -1,8 +1,9 @@
 <aside class="mt-8">
   <article>
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-2xl sm:text-4xl font-bold text_gradient">
-        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    <div class="prose prose-sm sm:prose-base mx-auto">
+      <h1>
+        <a class="font-bold text_gradient"
+           href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
       </h1>
       {% include 'article_infos.html' %}
     </div>

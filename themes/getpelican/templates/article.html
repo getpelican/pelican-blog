@@ -5,9 +5,10 @@
 {% block content %}
   <section class="mt-12">
     <article>
-      <header class="max-w-4xl mx-auto">
-        <h1 class="text-5xl font-black">
-          <a href="{{ SITEURL }}/{{ article.url }}"
+      <header class="prose sm:prose-xl mx-auto">
+        <h1>
+          <a class="text_gradient font-bold"
+             href="{{ SITEURL }}/{{ article.url }}"
              rel="bookmark"
              title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
         </h1>

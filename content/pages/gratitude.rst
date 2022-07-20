@@ -3,7 +3,7 @@ Gratitude
 
 :title: Gratitude
 
-The theme for this site is courtesy of `Smashing Magazine`_.
+The theme for this site is courtesy of `Luca Fedrizzi`_.
 
 The Pelican logo was designed by Derry Livenski and is available under a
 `Creative Commons`_ license via the download links below:
@@ -13,7 +13,7 @@ The Pelican logo was designed by Derry Livenski and is available under a
 SVG_ PNG_ PDF_
 
 
-.. _`Smashing Magazine`: http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+.. _`Luca Fedrizzi`: https://twitter.com/lc_fd
 .. _`Creative Commons`: https://creativecommons.org/licenses/by/4.0/
 
 .. |logo| image:: {static}/logo/pelican-logo-small.png
