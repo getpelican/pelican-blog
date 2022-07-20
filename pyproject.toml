@@ -10,6 +10,7 @@ packages = [{include = "pelican_blog"}]
 python = ">=3.10,<4.0"
 pelican-tailwindcss = ">=0.2.0"
 djlint = ">=1.7.0"
+pelican = {extras = ["markdown"], version = ">=4.8.0"}
 
 
 [build-system]
