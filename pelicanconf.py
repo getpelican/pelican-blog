@@ -1,7 +1,7 @@
 import logging
 
 AUTHOR = "Pelican Contributors"
-SITENAME = "Pelican Development Blog"
+SITENAME = "Pelican – A Python Static Site Generator"
 SITEURL = ""
 
 PATH = "content"
@@ -78,3 +78,13 @@ TAILWIND = {
         "@tailwindcss/line-clamp",
     ],
 }
+
+INDEX_SAVE_AS = "blog/index.html"
+PAGE_URL = "{slug}"
+PAGE_SAVE_AS = "{slug}/index.html"
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+ARTICLE_URL = 'blog/{slug}'
+CATEGORY_URL = 'category/{slug}/index.html'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+TAG_URL = 'tag/{slug}/index.html'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
