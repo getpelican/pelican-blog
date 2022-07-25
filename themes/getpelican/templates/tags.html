@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block title %}
-  {{ SITENAME }} - Tags
+  Tags
 {% endblock title %}
 {% block content %}
-  <h1 class="text-3xl text_gradient mt-12 font-black">Tags</h1>
-  <ul class="list-disc mt-6">
-    {% for tag, articles in tags|sort %}
-      <li>
-        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="max-w-4xl mx-auto mt-16">
+    <h1 class="text_gradient text-4xl sm:text-6xl font-black leading-normal sm:leading-snug">Tags</h1>
+    <ul class="list-disc list-inside mt-8">
+      {% for tag, articles in tags|sort %}
+        <li>
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock content %}
