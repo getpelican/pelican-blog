@@ -10,10 +10,10 @@
     }
     .btn_primary {
         @apply bg-primary;
-        @apply text-white;
+        @apply text-white hover:text-white;
     }
     .btn_white {
-        @apply bg-white;
+        @apply bg-white hover:text-primary;
     }
 
     .text_gradient {
@@ -29,7 +29,8 @@
     }
 
     a {
-        @apply underline;
+        @apply underline text-primary;
+        @apply transition-colors hover:text-primary-shade;
     }
 }
 

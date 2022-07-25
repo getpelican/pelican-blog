@@ -1,13 +1,13 @@
 <aside class="mt-8">
   <article>
-    <div class="prose prose-sm sm:prose-base mx-auto">
+    <div class="prose prose-sm sm:prose-base mx-auto prose-a:text-primary">
       <h1>
         <a class="font-bold text_gradient"
            href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
       </h1>
       {% include 'article_infos.html' %}
     </div>
-    <div class="prose prose-sm sm:prose-base mx-auto mt-6 break-words">{{ article.content }}</div>
+    <div class="prose prose-sm sm:prose-base mx-auto prose-a:text-primary mt-6 break-words">{{ article.content }}</div>
     {% include 'comments.html' %}
   </article>
   {% if loop.length == 1 %}

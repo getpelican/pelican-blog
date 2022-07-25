@@ -5,9 +5,9 @@
 {% block content %}
   <section class="mt-12">
     <article>
-      <header class="prose sm:prose-xl mx-auto">
+      <header class="prose sm:prose-xl mx-auto prose-a:text-primary">
         <h1>
-          <a class="text_gradient font-bold"
+          <a class="text_gradient font-bold no-underline"
              href="{{ SITEURL }}/{{ article.url }}"
              rel="bookmark"
              title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
@@ -15,7 +15,7 @@
         {% include 'twitter.html' %}
         {% include 'article_infos.html' %}
       </header>
-      <div class="prose sm:prose-xl mx-auto mt-8">{{ article.content }}</div>
+      <div class="prose sm:prose-xl mx-auto prose-a:text-primary mt-8">{{ article.content }}</div>
     </article>
   </section>
 {% endblock content %}
