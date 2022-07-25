@@ -3,6 +3,11 @@
   {{ SITENAME }} - {{ category }}
 {% endblock title %}
 {% block content %}
+  <div class="max-w-4xl mx-auto mt-16">
+    <h1 class="text_gradient text-4xl sm:text-6xl font-black leading-normal sm:leading-snug">
+      Articles in {{ category }} category
+    </h1>
+  </div>
   {% if articles %}
     {% for article in articles_page.object_list %}
       {# First item #}
