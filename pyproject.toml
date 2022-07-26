@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "The Pelican Blog"
 authors = ["Luca Fedrizzi <9001053+fedriz@users.noreply.github.com>"]
 readme = "README.rst"
-packages = [{include = "pelican_blog"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
