@@ -1,12 +1,12 @@
 import logging
 
 AUTHOR = "Pelican Contributors"
-SITENAME = "Pelican Development Blog"
+SITENAME = "Pelican – A Python Static Site Generator"
 SITEURL = ""
 
 PATH = "content"
 
-THEME = "themes/notmyidea"
+THEME = "themes/getpelican"
 
 CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
@@ -15,6 +15,8 @@ TIMEZONE = "Europe/Rome"
 
 DEFAULT_LANG = "en"
 LOCALE = "en_US.UTF-8"
+
+TEMPLATE_PAGES = {"homepage.html": "index.html"}
 
 MENUITEMS = (
     ("documentation", "https://docs.getpelican.com"),
@@ -68,3 +70,25 @@ MARKDOWN = {
     },
     "output_format": "html5",
 }
+
+TAILWIND = {
+    "version": "3.0.0",
+    "plugins": [
+        "@tailwindcss/typography",
+        "@tailwindcss/line-clamp",
+    ],
+}
+
+INDEX_SAVE_AS = "blog/index.html"
+PAGE_URL = "{slug}"
+PAGE_SAVE_AS = "{slug}/index.html"
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+ARTICLE_URL = 'blog/{slug}'
+CATEGORIES_URL = 'blog/categories/'
+CATEGORIES_SAVE_AS = 'blog/categories/index.html'
+CATEGORY_URL = 'blog/category/{slug}/index.html'
+CATEGORY_SAVE_AS = 'blog/category/{slug}/index.html'
+TAGS_URL = 'blog/tags/'
+TAGS_SAVE_AS = 'blog/tags/index.html'
+TAG_URL = 'blog/tag/{slug}/index.html'
+TAG_SAVE_AS = 'blog/tag/{slug}/index.html'

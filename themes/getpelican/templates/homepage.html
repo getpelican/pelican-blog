@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block header %}
+  <div class="bg-primary-100">
+    {{ super() }}
+    {% include "./includes/home_header.html" %}
+  </div>
+{% endblock header %}
+{% block content %}
+  {% include "./includes/home_features.html" %}
+  <div class="flex justify-center mt-12 sm:mt-24">
+    <img class="w-40 sm:max-w-xs fluctuate_animation"
+         src="{{ SITEURL }}/theme/img/pelican-3.png"
+         alt="another pelican"/>
+  </div>
+  {% include "./includes/home_quickstart.html" %}
+  {% include "./includes/home_support.html" %}
+  {% include "./includes/home_sponsors.html" %}
+{% endblock content %}

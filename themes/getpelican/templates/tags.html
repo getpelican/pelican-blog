@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  Tags
+{% endblock title %}
+{% block content %}
+  <div class="max-w-4xl mx-auto mt-16">
+    <h1 class="text_gradient text-4xl sm:text-6xl font-black leading-normal sm:leading-snug">Tags</h1>
+    <ul class="list-disc list-inside mt-8">
+      {% for tag, articles in tags|sort %}
+        <li>
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

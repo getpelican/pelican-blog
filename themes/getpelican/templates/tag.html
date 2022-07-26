@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  {{ SITENAME }} - {{ tag }}
+{% endblock title %}
+{% block content %}
+  <h1 class="text-3xl text_gradient mt-12">
+    Articles tagged with <span class="font-black">{{ tag }}</span>
+  </h1>
+  <ul class="list-disc mt-6">
+    {% for article in articles if tag in article.tags %}
+      <li>
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }} – {{ article.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

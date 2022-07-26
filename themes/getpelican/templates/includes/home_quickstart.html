@@ -1,0 +1,69 @@
+<div id="quickstart"></div>
+<div class="max-w-7xl mx-auto px-4 mt-12 sm:mt-24">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-4xl text_gradient font-black">Quickstart</h3>
+    <p class="mt-4 text-lg max-w-2xl text-gray-900">
+      Reading through all the documentation is highly recommended, but for the truly impatient, following are some quick steps to get started.
+    </p>
+    <div class="mt-10">
+      {# 1 #}
+      <div class="flex items-center">
+        <div class="rounded-full h-12 w-12 flex items-center justify-center bg-primary-shade text-xl font-black text-white">
+          1
+        </div>
+        <p class="ml-3 text-xl font-black">Installation</p>
+      </div>
+      <div class="mt-4">
+        <p class="mb-4 max-w-2xl">Install Pelican and Markdown.</p>
+        <pre><code class="overflow-x-auto max-w-full inline-block rounded-lg bg-gray-100 text-black px-6 py-6">python -m pip install "pelican[markdown]"</code></pre>
+      </div>
+      {# 2 #}
+      <div class="flex items-center mt-8">
+        <div class="rounded-full h-12 w-12 flex items-center justify-center bg-primary-shade text-xl font-black text-white">
+          2
+        </div>
+        <p class="ml-3 text-xl font-black">Create a project</p>
+      </div>
+      <div class="mt-4">
+        <p class="mb-4 max-w-2xl">Create a folder for your site and create a skeleton project inside of it.</p>
+        <pre><code class="overflow-x-auto max-w-full inline-block rounded-lg bg-gray-100 text-black px-6 py-6">mkdir -p ~/projects/yoursite
+cd ~/projects/yoursite
+pelican-quickstart
+</code></pre>
+        <p class="mt-4 max-w-2xl">
+          When asked for your URL prefix, enter your domain name as indicated (e.g., https://example.com).
+        </p>
+      </div>
+      {# 3 #}
+      <div class="flex items-center mt-8">
+        <div class="rounded-full h-12 w-12 flex items-center justify-center bg-primary-shade text-xl font-black text-white">
+          3
+        </div>
+        <p class="ml-3 text-xl font-black">Create an article</p>
+      </div>
+      <div class="mt-4">
+        <p class="mb-4 max-w-3xl">
+          Create your first article with the following content in <span class="inline_code">~/projects/yoursite/content/keyboard-review.md</span>:
+        </p>
+        <pre><code class="overflow-x-auto max-w-full inline-block rounded-lg bg-gray-100 text-black px-6 py-6">Title: My First Review
+Date: 2010-12-03 10:20
+Category: Review
+
+Following is a review of my favorite mechanical keyboard.</code></pre>
+      </div>
+      {# 4 #}
+      <div class="flex items-center mt-8">
+        <div class="rounded-full h-12 w-12 flex items-center justify-center bg-primary-shade text-xl font-black text-white">
+          4
+        </div>
+        <p class="ml-3 text-xl font-black">Preview your site</p>
+      </div>
+      <div class="mt-4">
+        <pre><code class="overflow-x-auto max-w-full  inline-block rounded-lg bg-gray-100 text-black px-6 py-6">pelican -r -l</code></pre>
+        <p class="mt-4 max-w-2xl">
+          Preview your site by navigating to <a class="underline" href="http://localhost:8000/">http://localhost:8000/</a> in your browser.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

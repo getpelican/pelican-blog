@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pelican static site generator" />
+    <meta name="keywords" content="static site generator, Python" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        {{ SITENAME }}
+      {% endblock title %}
+    </title>
+    {% if FEED_ALL_ATOM %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"
+            type="application/atom+xml"
+            rel="alternate"
+            title="{{ SITENAME }} Atom Feed"/>
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"
+            type="application/rss+xml"
+            rel="alternate"
+            title="{{ SITENAME }} RSS Feed"/>
+    {% endif %}
+    <link rel="stylesheet" href="/theme/css/fonts.css" />
+    <link rel="stylesheet" href="/output.css" />
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+  <body>
+    {% block header %}
+      {% include "./includes/topbar.html" %}
+    {% endblock header %}
+    <div class="max-w-7xl mx-auto px-4">
+      {% block content %}
+      {% endblock content %}
+      <div class="flex justify-end mt-12">
+        <img class="h-48 sm:h-auto"
+             src="{{ SITEURL }}/theme/img/pelican-4.png"
+             alt="another pelican"/>
+      </div>
+    </div>
+    {% include "./includes/footer.html" %}
+  </body>
+</html>

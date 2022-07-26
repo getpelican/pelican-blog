@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Categories{% endblock %}
+{% block content %}
+  <div class="max-w-4xl mx-auto mt-16">
+    <h1 class="text_gradient text-4xl sm:text-6xl font-black leading-normal sm:leading-snug">Categories</h1>
+    <ul class="list-disc list-inside mt-8">
+      {% for category, articles in categories|sort %}
+        <li>
+          <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles|count }})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}
